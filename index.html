@@ -4,79 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index1.css">
 </head>
 <body>
-<!-- <form action="#" onsubmit="add()"> -->
-<!-- <div id="date" style="width: 20px; height: 20px;"></div> -->
-<!-- <input type="number" required id="num1">
-<input type="number"  required id="num2">
-<button >add</button>
-</form>
-<form action="#" onsubmit="muoltip()">
-    <input type="number" required id="num1">
-    <input type="number" required id="num2">
-<button >multip</button>
-</form>
-<form action="#" onsubmit="sub()" >
-    <input type="number" required id="num1">
-    <input type="number" required id="num2">
-<button >subtration</button>
-</form>
-<form action="#" onsubmit="divi()">
-<button >division</button>
-</form> -->
- <!-- <form action="#" onsubmit="cheack()">
- <h1 > persantage</h1>
-    <input type="number" required id="che">
-<button>sumbit</button> 
-</form>
-<p id="reasult"></p>
+
+    <form action="#" onsubmit="persantage()">
+    <input type="number" required placeholder="total marks" id="per1">
+    <input type="number" required placeholder="obtained marks" id="per2">
+    <button>ADD</button>
+    </form>
+    <h1 id="persant"></h1>
+    <p id="result"></p>
 <script>
+function  persantage(){
+    let per1 = document.getElementById("per1").value
+    let per2 = document.getElementById("per2").value
+let per = (per2/per1*100) 
+ document.getElementById("persant").innerHTML = per 
 
-function cheack(){
-    let per = document.getElementById("che").value;
-    per = parseInt(per);
-    if(per >= 80 && per <= 100 ){
-document.getElementById("reasult").innerHTML= "<h1> A+ </h1>"}
+if( per >= 80 && per <= 100 ){
+document.getElementById("result").innerHTML= "<h1> A+ </h1>"}
 else if( per >= 70 &&  per < 80  ){
-document.getElementById("reasult").innerHTML= "<h1> A </h1>"}
+document.getElementById("result").innerHTML= "<h1> A </h1>"}
 else if (per >= 60 &&  per < 70  ){
-document.getElementById("reasult").innerHTML= "<h1> B </h1>"}
+document.getElementById("result").innerHTML= "<h1> B </h1>"}
 else if ( per >= 50 && per < 60){
-document.getElementById("reasult").innerHTML= "<h1> c </h1>"}
-else{ document.getElementById("reasult").innerHTML= "<h1> fail </h1>"}
+document.getElementById("result").innerHTML= "<h1> c </h1>"}
+else{ document.getElementById("result").innerHTML= "<h1> fail </h1>"}
 
-} -->
+}
 
-// function cheack(){
-    // let temp = document.getElementById("che").value;
-    // temp = parseInt(temp);
-    // const run =temp != 21;
-    // const run =21 != 21; not equal bara br honge to false wr na true  
-    // const run =temp <= 21; >=
 
-    // console.log("Run", run);
-// }
 
-// function add(){
-//     let num1 = document.getElementById("num1").value;
-//     let num2 = document.getElementById("num2").value;
-// num1 = parseFloat(num1)
-// num2 = parseFloat(num2)
- 
-// let total = num1 + num2
-// console.log(num1 + num2)
-// }
 
-// let  num1 = 34
-// if(num1){
-// alert(" run ")
-// }
+
+
 
 </script>
 
-<!-- <script src="index.js"></script> -->
-</body>`    
-
-
+</body>
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+
+    <form action="#" onsubmit="persantage()">
+    <input type="number" required placeholder="total marks" id="per1">
+    <input type="number" required placeholder="obtained marks" id="per2">
+    <button>ADD</button>
+    </form>
+    <h1 id="persant"></h1>
+    <p id="result"></p>
+<script>
+function  persantage(){
+    let per1 = document.getElementById("per1").value
+    let per2 = document.getElementById("per2").value
+let per = (per2/per1*100) 
+ document.getElementById("persant").innerHTML = per 
+
+if( per >= 80 && per <= 100 ){
+document.getElementById("result").innerHTML= "<h1> A+ </h1>"}
+else if( per >= 70 &&  per < 80  ){
+document.getElementById("result").innerHTML= "<h1> A </h1>"}
+else if (per >= 60 &&  per < 70  ){
+document.getElementById("result").innerHTML= "<h1> B </h1>"}
+else if ( per >= 50 && per < 60){
+document.getElementById("result").innerHTML= "<h1> c </h1>"}
+else{ document.getElementById("result").innerHTML= "<h1> fail </h1>"}
+
+}
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

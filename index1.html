@@ -1,0 +1,155 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p>
+
+Matrix 1 :
+<div id="mat1"></div>
+Matrix 2 :
+<div id="mat2"></div>
+
+Result :
+<div id="result"></div>
+
+</p>
+ 
+
+
+
+
+    <!-- <form action="#" onsubmit="cla()">
+        <input type="number" id="input">
+        <button>click</button>
+    </form> -->
+
+
+    <!-- <p id="show"></p>
+    <button onclick="areng()">Arenged</button>
+        <h1>EVEN NUMBERS</h1>
+            <p id="odd"></p>
+        <h1>ODD NUMBERS</h1>        
+            <p id="even"></p>
+
+    
+        let arr = [];
+        let odd = [];
+        let even = [];
+        function cla() {
+            let input = document.getElementById("input").value;
+            arr.push(input);
+        document.getElementById("show").innerHTML = arr;
+        document.getElementById("input").value = "";
+        }
+function areng(){
+    for (let i = 0; i< arr.length; i++) {
+    if (arr[i] % 2 === 0){
+        even.push(arr[i])
+        
+    }else{
+        odd.push(arr[i])
+    }
+    
+    }
+    document.getElementById("even").innerHTML=even;
+document.getElementById("odd").innerHTML=odd;
+
+} -->
+<script>
+
+
+// let arr = [2,5,"hunain",[[50,8,"p"]],52]
+
+// console.log(arr[3][0][1])
+
+// let arr2d=[
+//     [1,5,1,6],
+//     [5,4,8,5],
+//     [5,6,4,2],
+//     [5,6,4,8]
+
+// ]
+//  arr2d[3][2]=7
+// console.log(arr2d[3][2])
+
+// let arr2d=[
+//     [1,5,1,6],
+//     [5,4,8,5],
+//     [5,6,4,2],
+//     [5,6,4,8]
+// ]
+// for (let i = 0; i < arr2d.length; i++) {
+//     console.log = (arr2d[i]);
+
+//     for (let j = 0; j < arr2d[i].length; j++) {
+//         console.log= (arr2d[i][j]);
+    
+//     }
+// }
+
+//   let clean = ["karachi","isb","lahore"]
+//   let user = prompt("enter city")
+//   isFound = "fdjjhjf"
+// for (let i = 0; i < array.length; i++) {
+//    if (user === clean[i]) {
+//        alert("hahah")
+//    }
+    
+// }
+
+// if (isFound) {
+//     alert("dsjfj")
+// }
+
+
+
+
+
+
+
+let mat1 = [ [0,0],
+             [0,0]]
+let mat2 = [ [0,0],
+             [0,0]]
+let result = [[0,0],
+              [0,0]]
+for (let i = 0; i <mat1.length; i++) {
+   for (let j = 0; j < mat1[i].length; j++) {
+      console.log("i=",i,"and j =",j)
+       mat1[i][j]= +prompt("gatting one data, enter"+i+","+ j +",")
+   }
+    
+}
+console.log(mat1)
+for (let i = 0; i <mat2.length; i++) {
+   for (let j = 0; j < mat2[i].length; j++) {
+      console.log("i=",i,"and j =",j)
+       mat2[i][j]= + prompt("gatting one data, enter"+i+","+ j +",")
+   }
+    
+}
+
+console.log(mat2)
+
+for (let i = 0; i <result.length; i++) {
+   for (let j = 0; j < result[i].length; j++) {
+      console.log("i=",i,"and j =",j)
+      result[i][j] = mat1[i][result[i]] * mat2[result[i]][j]
+   }
+    
+}
+console.log("sum of mat1 and mat2",result)
+
+
+  
+    </script>
+</body>
+
+</html>
